@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <h3>Product Create</h3>
+  <form method="POST" action="/products/store" enctype="multipart/form-data">
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputName">Product Name:</label>
+        <input class="form-control" id="inputName" placeholder="Product name" name="name">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputPrice">Product Price:</label>
+        <input type="text" class="form-control" id="inputPrice" placeholder="Product price" name="price">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputRating">Product Rating:</label>
+        <select name="rating" id="" class="form-control">
+          <option value="1">1 Start</option>
+          <option value="2">2 Start</option>
+          <option value="3">3 Start</option>
+          <option value="4">4 Start</option>
+          <option value="5">5 Start</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row mt-3">
+      <div class="form-group col-md-6">
+        <label for="inputRating">Product Image</label>
+        <input type="file" class="custom-file-input form-control" id="customFile" name="image">
+        <label class="custom-file-label" for="customFile">Choose product file</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" name="active">
+        <label class="custom-control-label" for="customSwitch1">Product active</label>
+      </div>
+    </div>
+    <div class="form-row mt-4">
+      <button type="submit" class="btn btn-info">Save Product</button>
+    </div>
+  </form>
+</div>
